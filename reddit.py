@@ -6,8 +6,8 @@ auth = requests.auth.HTTPBasicAuth(st.secrets['UserID']['UserID'], st.secrets['r
 
 # here we pass our login method (password), username, and password
 data = {'grant_type': 'password',
-        'username': st.secret['username']['username'],
-        'password': st.secret['password']['password']}
+        'username': st.secrets['username']['username'],
+        'password': st.secrets['password']['password']}
 
 # setup our header info, which gives reddit a brief description of our app
 headers = {'User-Agent': 'scraper/0.0.1'}
