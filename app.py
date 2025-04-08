@@ -8,3 +8,6 @@ if st.button('Load Data'):
     if file is not None:
         df = pd.read_csv(file)
         st.write(df)
+
+api_key = st.secrets['alpha_vantage']['api_key']
+st.write('API Key:', api_key)
